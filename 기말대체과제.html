@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juhyun's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        .content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            color: #333;
+            text-align: center;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .about-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 300px;
+            background-color: #fff;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            justify-items: center;
+        }
+
+        .project-item {
+            background-color: #fff;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .project-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form {
+            background-color: #ecf0f1;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+            padding-right: 3rem; /* 왼쪽 여백 확대 */
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            background-color: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .contact-form button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .project {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Juhyun's Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content">
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-item"><i class="fas fa-user"></i><span>Name: Won Juhyun</span></div>
+            <div class="about-item"><i class="fas fa-calendar-alt"></i><span>Birth: 2005.05.01</span></div>
+            <div class="about-item"><i class="fas fa-map-marker-alt"></i><span>Address: South Korea, Seoul</span></div>
+            <div class="about-item"><i class="fas fa-phone"></i><span>Number: +82)010-1234-5678</span></div>
+            <div class="about-item"><i class="fas fa-envelope"></i><span>Email: wonjuhyun551@gmail.com</span></div>
+            <div class="about-item"><i class="fas fa-graduation-cap"></i><span>Education: Hanyang Women's University</span></div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Project</h2>
+        <div class="project">
+            <div class="project-item">
+                <h3>Project1</h3>
+                <img src="디지털지도챗봇.png" alt="Project1 Screenshot" style="width: 100%; height: auto; border-radius: 8px;">
+                <p>디지털 소외계층을 위한 대화형 지도 챗봇 제작</p>
+                <a href="#">프로젝트 링크</a>
+            </div>
+            <div class="project-item">
+                <h3>Project2</h3>
+                <img src="아두이노LED차량신호등만들기.png" alt="Project2 Screenshot" style="width: 100%; height: auto; border-radius: 8px;">
+                <p>아두이노 LED 차량 신호등 만들기</p>
+                <a href="#">프로젝트 링크</a>
+            </div>
+            <div class="project-item">
+                <h3>Project3</h3>
+                <img src="파이썬구구단퀴즈게임코드.png" alt="Project3 Screenshot" style="width: 100%; height: auto; border-radius: 8px;">
+                <p>파이썬 구구단 퀴즈 게임 코드</p>
+                <a href="#">프로젝트 링크</a>
+            </div>
+            <div class="project-item">
+                <h3>Project4</h3>
+                <img src="쿠팡앱생성형AI챗봇도입.png" alt="Project3 Screenshot" style="width: 100%; height: auto; border-radius: 8px;">
+                <p>쿠팡 앱 생성형 AI 챗봇 도입</p>
+                <a href="#">프로젝트 링크</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form class="contact-form" id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 나의 포트폴리오</p>
+</footer>
+
+<script>
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        alert('Thank you for your message, ' + name + '! We will get back to you soon.');
+        contactForm.reset();
+    });
+</script>
+
+</body>
+</html>
